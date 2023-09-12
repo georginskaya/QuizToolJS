@@ -90,7 +90,7 @@ async function nextQuestionHandler(){
 
        optionsArr = shuffleArray(optionsArr);
 
-        questionElement.innerHTML = `<img class ="quiz-img" src="https://github.com/georginskaya/QuizToolJS/raw/main/imgs/undraw_adventure_4hum%201.svg"/> What is the capital of ${country.name.common}?`
+        questionElement.innerHTML = `<img class ="quiz-img" src="https://github.com/georginskaya/QuizToolJS/raw/main/imgs/undraw_adventure.svg"/> What is the capital of ${country.name.common}?`
         optionsElement.innerHTML = optionsArr.map(option => `<button>${option}</button>`).join('');
     }
     else  if (questionType === 'flag') {
@@ -109,7 +109,7 @@ async function nextQuestionHandler(){
 
 
 
-           questionElement.innerHTML = `<img class ="quiz-img" src="/Users/love/Desktop/myleaf/QuizToolJS/imgs/undraw_adventure_4hum 1.svg"/> <span><img id="flag" src="${country.flags.png}" /></span><br> <div class ="question-text"> What country does this flag belong to? </div>`
+           questionElement.innerHTML = `<img class ="quiz-img" src="https://github.com/georginskaya/QuizToolJS/raw/main/imgs/undraw_adventure.svg"/> <span><img id="flag" src="${country.flags.png}" /></span><br> <div class ="question-text"> What country does this flag belong to? </div>`
            optionsElement.innerHTML = optionsArr.map(option => `<button>${option}</button>`).join('');
     }
 
